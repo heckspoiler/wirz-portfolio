@@ -2,6 +2,7 @@ import React from "react";
 import "./SectionOne.css";
 import heroImage from "./img/hero-image.png";
 import star from "./icons/large-star.png";
+import arrow from "./icons/arrow-first-section.png";
 
 export const SectionOne = () => {
   return (
@@ -31,6 +32,7 @@ export const SectionOne = () => {
         </p>
       </div>
       <img src={heroImage} className="section-one_image" />
+      <img src={arrow} className="section-one_arrow" />
     </div>
   );
 };

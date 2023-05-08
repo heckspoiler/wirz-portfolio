@@ -61,3 +61,11 @@ p {
   margin-left: 18rem;
   margin-top: 2.3rem;
 }
+
+.section-one_arrow {
+  position: absolute;
+  height: 6rem;
+  width: 12rem;
+  margin-top: 38rem;
+  margin-right: 12rem;
+}
