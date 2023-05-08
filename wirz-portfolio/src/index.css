@@ -5,6 +5,24 @@
   border: none;
 }
 
+@font-face {
+  font-family: "neue-machina-regular";
+  src: url("./fonts/NeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "neue-machina-ultrabold";
+  src: url("./fonts/NeueMachina-Ultrabold.otf") format("opentype");
+}
+
+:root {
+  --main-font: "neue-machina-regular", sans-serif;
+  --title-font: "Oi", cursive;
+  --subtitle-font: "neue-machina-ultrabold", sans-serif;
+  --title-color-blue: #8cbfd2;
+  --title-color-beige: #f4eed5;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -21,7 +39,7 @@ code {
 
 h1 {
   font-weight: 300;
-  font-family: "Oi", cursive;
+  font-family: var(--subtitle-font);
   font-size: 5rem;
-  color: red;
+  color: var(--title-color-beige);
 }
