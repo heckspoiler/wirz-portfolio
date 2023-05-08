@@ -18,3 +18,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+  font-weight: 300;
+  font-family: "Oi", cursive;
+  font-size: 5rem;
+  color: red;
+}
