@@ -39,7 +39,10 @@ code {
 
 h1 {
   font-weight: 300;
-  font-family: var(--subtitle-font);
-  font-size: 5rem;
+  font-family: var(--title-font);
+  text-shadow: -5px 10px 1px black;
+  font-size: 4rem;
+  -webkit-text-stroke: 1px #000000;
+
   color: var(--title-color-beige);
 }

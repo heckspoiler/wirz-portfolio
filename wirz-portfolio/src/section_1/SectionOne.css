@@ -1,0 +1,32 @@
+.section-one_main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-one_main-title {
+  color: var(--title-color-blue);
+  line-height: 3.6rem;
+  letter-spacing: 1.5rem;
+}
+
+.section-one_image {
+  height: 30rem;
+  width: 30rem;
+}
+
+.section-one_left-side-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+p {
+  font-family: var(--main-font);
+}
+
+.section-one_paragraph-container {
+  gap: 20px;
+}
