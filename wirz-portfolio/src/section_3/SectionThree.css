@@ -1,7 +1,7 @@
 .section-three_container {
   height: 100vh;
   width: 100vw;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .section-three_text-container {
@@ -69,8 +69,8 @@
   position: absolute;
   height: 8rem;
   width: 14rem;
-  margin-left: 28rem;
-  margin-top: -1rem;
-  rotate: calc(-10deg);
+  margin-left: 35rem;
+  margin-top: -4rem;
+  transform: rotate(100deg) scaleX(-1);
   opacity: 0;
 }
