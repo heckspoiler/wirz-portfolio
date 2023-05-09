@@ -36,7 +36,7 @@ export const SectionFour = () => {
       });
       animationDots.start({
         width: "115px",
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1.5 },
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 2.2 },
       });
       animationFirst.start({
         opacity: 1,

@@ -125,6 +125,7 @@ li {
 
 .section-four_job-subheader {
   text-decoration: solid underline;
+  font-family: var(--subtitle-font);
 }
 
 .section-four_dots {
