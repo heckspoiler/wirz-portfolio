@@ -18,7 +18,7 @@ export const SectionFive = () => {
   const animationCircleOverlay = useAnimation();
   const animationRoadmap = useAnimation();
   const animationEllipseFive = useAnimation();
-  const animateParagraph = useAnimation();
+  const animationParagraph = useAnimation();
 
   useEffect(() => {
     if (inView) {
@@ -33,11 +33,15 @@ export const SectionFive = () => {
       });
       animationRoadmap.start({
         left: "50%",
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1.4 },
+        transition: { duration: 1.5, bounce: 0.3, delay: 1.4 },
       });
       animationEllipseFive.start({
         opacity: 1,
         transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1.8 },
+      });
+      animationParagraph.start({
+        opacity: 1,
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 6 },
       });
     }
   }, [inView]);
@@ -57,8 +61,8 @@ export const SectionFive = () => {
         animate={animationEllipseFive}
       />
       <m.img src={roadmap} className="roadmap" animate={animationRoadmap} />
-      <m.p className="section-five_paragraph">
-        So many wrong turns to get on the right track, huh...
+      <m.p className="section-five_paragraph" animate={animationParagraph}>
+        So many wrong turns to get on the right track!
       </m.p>
     </div>
   );

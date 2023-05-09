@@ -59,4 +59,5 @@
   /* background-color: white; */
   padding: 4px;
   font-family: var(--subtitle-font);
+  opacity: 0;
 }
