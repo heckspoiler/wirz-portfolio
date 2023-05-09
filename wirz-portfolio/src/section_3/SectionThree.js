@@ -15,20 +15,20 @@ export const SectionThree = () => {
     triggerOnce: true, // Set to true so the animation only triggers once when the element comes into view
   });
 
-  const animationTitle = useAnimation({ fontSize: "0", opacity: 0 });
-  const animationFirstParagraph = useAnimation({ opacity: 0 });
-  const animationSecondParagraph = useAnimation({ opacity: 0 });
-  const animationArrow = useAnimation({ opacity: 0 });
-  const animationMagenbrot = useAnimation({ marginLeft: "0", opacity: 0 });
-  const animationBackground = useAnimation({ opacity: 0 });
-  const animationYummy = useAnimation({ height: "0", width: "0" });
+  const animationTitle = useAnimation();
+  const animationFirstParagraph = useAnimation();
+  const animationSecondParagraph = useAnimation();
+  const animationArrow = useAnimation();
+  const animationMagenbrot = useAnimation();
+  const animationBackground = useAnimation();
+  const animationYummy = useAnimation();
 
   useEffect(() => {
     if (inView) {
       animationTitle.start({
-        fontSize: "4rem",
         opacity: 1,
-        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1.5 },
+        fontSize: "4rem",
+        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1 },
       });
       animationMagenbrot.start({
         marginLeft: "6rem",
@@ -38,17 +38,17 @@ export const SectionThree = () => {
           type: "spring",
           stiffness: 30,
           duration: 2,
-          delay: 1.7,
+          delay: 1.2,
         },
       });
       animationBackground.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 2.3 },
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1.8 },
       });
       animationYummy.start({
         height: "14rem",
         width: "14rem",
-        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 2.6 },
+        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 2.2 },
       });
       animationFirstParagraph.start({
         opacity: 1,
@@ -56,12 +56,12 @@ export const SectionThree = () => {
           type: "spring",
           duration: 1.5,
           bounce: 0.3,
-          delay: 3.1,
+          delay: 2.4,
         },
       });
       animationSecondParagraph.start({
         opacity: 1,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 3.5 },
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 2.8 },
       });
 
       animationArrow.start({
@@ -77,9 +77,13 @@ export const SectionThree = () => {
     console.log("use effect hook, inView = ", inView);
   }, [inView]);
   return (
-    <m.div className="section-three_container" ref={ref}>
-      <m.section className="section-three_text-container">
-        <m.h1 className="section-three_title" animate={animationTitle}>
+    <m.div className="section-three_container">
+      <section className="section-three_text-container">
+        <m.h1
+          className="section-three_title"
+          animate={animationTitle}
+          ref={ref}
+        >
           Joy <br />
           and
           <br />
@@ -99,7 +103,7 @@ export const SectionThree = () => {
           Definitely not an expert (yet), but working every day to improve my
           skills and stay in the saddle.
         </m.p>
-      </m.section>
+      </section>
       <m.section className="section-three_img-container">
         <m.img
           src={ellipse}
