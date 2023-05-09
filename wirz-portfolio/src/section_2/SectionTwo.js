@@ -10,7 +10,10 @@ import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 
 export const SectionTwo = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.4, // Adjust the value between 0 and 1 according to when you want the animation to trigger
+    triggerOnce: true, // Set to true so the animation only triggers once when the element comes into view
+  });
 
   const animationTitle = useAnimation();
   const animationArrow = useAnimation();
@@ -22,7 +25,7 @@ export const SectionTwo = () => {
     if (inView) {
       animationTitle.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 0.5 },
+        transition: { type: "spring", duration: 2, bounce: 0.3 },
       });
       animationArrow.start({
         opacity: 1,
