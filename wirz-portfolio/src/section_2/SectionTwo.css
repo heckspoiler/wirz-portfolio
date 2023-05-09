@@ -16,24 +16,32 @@
 }
 
 .section-two_info-card {
-  height: 44rem;
-  width: 44rem;
-  margin-left: 5rem;
+  height: 39rem;
+  width: 39rem;
+  margin-left: 8rem;
   margin-top: -3rem;
 }
 
 .section-two_portrait {
   position: absolute;
-  height: 47rem;
-  width: 32rem;
-  margin-left: 46rem;
-  margin-top: -13rem;
+  height: 40rem;
+  width: 27rem;
+  margin-left: 50rem;
+  margin-top: -10rem;
 }
 
 .section-two_arrow {
   position: absolute;
   margin-left: 40rem;
   margin-top: -4rem;
+  height: 8rem;
+  width: 10rem;
+}
+
+.section-two_arrow-curvy {
+  position: absolute;
+  margin-left: 57rem;
+  margin-top: 32rem;
   height: 8rem;
   width: 10rem;
 }
