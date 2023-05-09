@@ -1,0 +1,87 @@
+.section-four_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 2rem;
+}
+
+.section-four_title {
+  width: auto;
+  margin-left: 2rem;
+  opacity: 0;
+}
+
+.section-four_job-date {
+  opacity: 0;
+}
+
+table,
+th,
+td {
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-family: var(--main-font);
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  font-family: var(--main-font);
+  padding: none;
+  list-style-position: inside;
+  font-size: 0.8rem;
+  opacity: 0;
+}
+
+.section-four_job-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-four_job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  height: 20rem;
+}
+
+.section-four_columns {
+  display: flex;
+  gap: 20px;
+}
+.img-rio {
+  height: 5rem;
+  width: 7rem;
+  opacity: 0;
+}
+
+.img-parki {
+  scale: 0.8;
+  opacity: 0;
+}
+
+.img-schwarz {
+  scale: 0.6;
+  opacity: 0;
+}
+
+.img-passugger {
+  scale: 0.7;
+  opacity: 0;
+}
+
+.section-four_job-subheader {
+  font-size: 1rem;
+  opacity: 0;
+}
