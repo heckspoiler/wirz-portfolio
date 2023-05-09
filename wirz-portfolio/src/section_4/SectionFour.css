@@ -67,13 +67,14 @@ li {
 }
 
 .img-parki {
-  scale: 0.8;
+  scale: 0.7;
   opacity: 0;
 }
 
 .img-schwarz {
-  scale: 0.6;
   opacity: 0;
+  height: 0.8rem;
+  width: 10rem;
 }
 
 .img-passugger {
@@ -109,4 +110,19 @@ li {
   margin-top: 32rem;
   opacity: 0;
   transform: rotate(-10deg);
+}
+
+.section-four_job-list {
+  align-items: center;
+  padding: 0;
+}
+
+.section-four_job-list-objects {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-four_job-subheader {
+  text-decoration: solid underline;
 }

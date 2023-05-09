@@ -160,27 +160,29 @@ export const SectionFour = () => {
         </tr>
         <tr className="section-four_job-list">
           <td>
-            <ul className="section-four_job-list">
-              <m.li animate={animationText}>Backoffice / Administration</m.li>
+            <ul className="section-four_job-list section-four_job-list-objects">
+              <m.li animate={animationText}>Backoffice</m.li>
+              <m.li animate={animationText}>Administration</m.li>
               <m.li animate={animationText}>Production</m.li>
               <m.li animate={animationText}>Warehouse Work</m.li>
               <m.li animate={animationText}>Assistant</m.li>
             </ul>
           </td>
           <td>
-            <ul>
-              <m.li animate={animationText}>Backoffice / Administration</m.li>
+            <ul className="section-four_job-list section-four_job-list-objects">
+              <m.li animate={animationText}>Backoffice</m.li>
+              <m.li animate={animationText}>Administration</m.li>
               <m.li animate={animationText}>HR</m.li>
             </ul>
           </td>
           <td>
-            <ul>
+            <ul className="section-four_job-list section-four_job-list-objects">
               <m.li animate={animationText}>Bartender</m.li>
             </ul>
           </td>
           <td>
             {" "}
-            <ul>
+            <ul className="section-four_job-list section-four_job-list-objects">
               <m.li animate={animationText}>
                 Shift Manager / Deputy Manager
               </m.li>
