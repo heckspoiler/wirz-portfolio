@@ -1,0 +1,17 @@
+.section-five_container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.section-five_title {
+  color: var(--title-color-blue);
+  margin-left: 4rem;
+}
+
+.section-five_circles {
+  position: absolute;
+  margin-top: -10rem;
+  z-index: -4;
+  height: 15rem;
+  width: 15rem;
+}
