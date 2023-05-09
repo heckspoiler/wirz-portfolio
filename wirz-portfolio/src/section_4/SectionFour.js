@@ -26,12 +26,17 @@ export const SectionFour = () => {
   const animationText = useAnimation();
   const animationImage = useAnimation();
   const animationArrow = useAnimation();
+  const animationDots = useAnimation();
 
   useEffect(() => {
     if (inView) {
       animationTitleFourth.start({
         opacity: 1,
         transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1 },
+      });
+      animationDots.start({
+        width: "115px",
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1.5 },
       });
       animationFirst.start({
         opacity: 1,
@@ -66,6 +71,7 @@ export const SectionFour = () => {
 
   return (
     <div className="section-four_container" ref={ref}>
+      <m.img src={dots} className="section-four_dots" animate={animationDots} />
       <m.h1 className="section-four_title" animate={animationTitleFourth}>
         WORK EXPERIENCE
       </m.h1>
