@@ -101,3 +101,12 @@ li {
   width: 30rem;
   opacity: 0;
 }
+
+.section-four_arrow {
+  scale: 0.5;
+  position: absolute;
+  margin-left: 36rem;
+  margin-top: 32rem;
+  opacity: 0;
+  transform: rotate(-10deg);
+}

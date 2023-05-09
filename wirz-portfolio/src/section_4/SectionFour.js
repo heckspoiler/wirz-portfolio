@@ -25,6 +25,7 @@ export const SectionFour = () => {
   const animationFourth = useAnimation();
   const animationText = useAnimation();
   const animationImage = useAnimation();
+  const animationArrow = useAnimation();
 
   useEffect(() => {
     if (inView) {
@@ -56,6 +57,10 @@ export const SectionFour = () => {
         opacity: 1,
         transition: { type: "spring", duration: 3, bounce: 0.3, delay: 3.2 },
       });
+      animationArrow.start({
+        opacity: 1,
+        transition: { type: "spring", duration: 3, bounce: 0.3, delay: 4.2 },
+      });
     }
   }, [inView]);
 
@@ -68,6 +73,11 @@ export const SectionFour = () => {
         src={ellipse}
         className="section-four_ellipse"
         animate={animationImage}
+      />
+      <m.img
+        src={arrow}
+        className="section-four_arrow"
+        animate={animationArrow}
       />
       <table className="section-four_job-table">
         <tr className="section-four_image-row">
