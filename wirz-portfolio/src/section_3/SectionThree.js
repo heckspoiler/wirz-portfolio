@@ -26,9 +26,9 @@ export const SectionThree = () => {
   useEffect(() => {
     if (inView) {
       animationTitle.start({
-        marginLeft: 0,
+        fontSize: "4rem",
         opacity: 1,
-        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 0.5 },
+        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 0.8 },
       });
       animationMagenbrot.start({
         marginLeft: "6rem",
@@ -38,40 +38,35 @@ export const SectionThree = () => {
           type: "spring",
           stiffness: 30,
           duration: 2,
-          delay: 0.5,
+          delay: 1.2,
         },
+      });
+      animationBackground.start({
+        opacity: 1,
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1.6 },
       });
       animationYummy.start({
         height: "14rem",
         width: "14rem",
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1.4 },
+        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 1.9 },
       });
       animationFirstParagraph.start({
-        left: "50rem",
-        ease: "easeInOut",
         opacity: 1,
         transition: {
           type: "spring",
           duration: 1.5,
           bounce: 0.3,
-          delay: 1.5,
+          delay: 2.3,
         },
       });
       animationSecondParagraph.start({
-        left: "50rem",
-        ease: "easeInOut",
         opacity: 1,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1.5 },
-      });
-
-      animationBackground.start({
-        opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1.4 },
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 2.8 },
       });
 
       animationArrow.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1 },
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 4 },
       });
 
       // if (!inView) {
@@ -90,11 +85,17 @@ export const SectionThree = () => {
           <br />
           Motivation
         </m.h1>
-        <m.p className="section-three_paragraph para-1">
+        <m.p
+          className="section-three_paragraph para-1"
+          animate={animationFirstParagraph}
+        >
           I spend most of my day in the world of web development and design.
           It's like an endless rollercoaster ride, except I never get nauseous.
         </m.p>
-        <m.p className="section-three_paragraph">
+        <m.p
+          className="section-three_paragraph para-2"
+          animate={animationSecondParagraph}
+        >
           Definitely not an expert (yet), but working every day to improve my
           skills and stay in the saddle.
         </m.p>
@@ -114,8 +115,13 @@ export const SectionThree = () => {
           src={yummy}
           className="section-three_yummy"
           animate={animationYummy}
+          layout
         />
-        <m.img src={arrow} className="section-three_arrow" />
+        <m.img
+          src={arrow}
+          className="section-three_arrow"
+          animate={animationArrow}
+        />
       </m.section>
     </m.div>
   );

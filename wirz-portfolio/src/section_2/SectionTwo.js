@@ -29,17 +29,17 @@ export const SectionTwo = () => {
       });
       animationArrow.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1 },
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 0.5 },
       });
       animationImage.start({
         left: "50rem",
         ease: "easeInOut",
         opacity: 1,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1.5 },
+        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1 },
       });
       animationCard.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2.3, bounce: 0.3, delay: 2.3 },
+        transition: { type: "spring", duration: 2.3, bounce: 0.3, delay: 1.8 },
       });
       animationCurlyArrow.start({
         opacity: 1,
