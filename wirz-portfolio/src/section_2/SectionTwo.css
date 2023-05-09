@@ -1,0 +1,39 @@
+.section-two_main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.section-two_main-title {
+  margin-left: 10rem;
+}
+
+.section-two_img-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  top: 0;
+  margin-top: -30px;
+}
+
+.section-two_info-card {
+  height: 44rem;
+  width: 44rem;
+  margin-left: 5rem;
+  margin-top: -3rem;
+}
+
+.section-two_portrait {
+  position: absolute;
+  height: 47rem;
+  width: 32rem;
+  margin-left: 46rem;
+  margin-top: -13rem;
+}
+
+.section-two_arrow {
+  position: absolute;
+  margin-left: 40rem;
+  margin-top: -4rem;
+  height: 8rem;
+  width: 10rem;
+}

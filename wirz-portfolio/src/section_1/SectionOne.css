@@ -67,9 +67,9 @@ p {
 .section-one_arrow {
   position: absolute;
   height: 6rem;
-  width: 12rem;
+  width: 11rem;
   margin-top: 38rem;
-  margin-right: 12rem;
+  margin-right: 15rem;
   animation: arrow 3s ease-in-out 4;
 }
 
