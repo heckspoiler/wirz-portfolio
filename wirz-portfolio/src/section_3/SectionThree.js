@@ -11,24 +11,24 @@ import arrow from "./img/arrow-section-three.png";
 
 export const SectionThree = () => {
   const { ref, inView } = useInView({
-    threshold: 0.4, // Adjust the value between 0 and 1 according to when you want the animation to trigger
+    threshold: 0.3, // Adjust the value between 0 and 1 according to when you want the animation to trigger
     triggerOnce: true, // Set to true so the animation only triggers once when the element comes into view
   });
 
-  const animationTitle = useAnimation();
-  const animationFirstParagraph = useAnimation();
-  const animationSecondParagraph = useAnimation();
-  const animationArrow = useAnimation();
-  const animationMagenbrot = useAnimation();
-  const animationBackground = useAnimation();
-  const animationYummy = useAnimation();
+  const animationTitle = useAnimation({ fontSize: "0", opacity: 0 });
+  const animationFirstParagraph = useAnimation({ opacity: 0 });
+  const animationSecondParagraph = useAnimation({ opacity: 0 });
+  const animationArrow = useAnimation({ opacity: 0 });
+  const animationMagenbrot = useAnimation({ marginLeft: "0", opacity: 0 });
+  const animationBackground = useAnimation({ opacity: 0 });
+  const animationYummy = useAnimation({ height: "0", width: "0" });
 
   useEffect(() => {
     if (inView) {
       animationTitle.start({
         fontSize: "4rem",
         opacity: 1,
-        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 0.8 },
+        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1.5 },
       });
       animationMagenbrot.start({
         marginLeft: "6rem",
@@ -38,17 +38,17 @@ export const SectionThree = () => {
           type: "spring",
           stiffness: 30,
           duration: 2,
-          delay: 1.2,
+          delay: 1.7,
         },
       });
       animationBackground.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1.6 },
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 2.3 },
       });
       animationYummy.start({
         height: "14rem",
         width: "14rem",
-        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 1.9 },
+        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 2.6 },
       });
       animationFirstParagraph.start({
         opacity: 1,
@@ -56,17 +56,17 @@ export const SectionThree = () => {
           type: "spring",
           duration: 1.5,
           bounce: 0.3,
-          delay: 2.3,
+          delay: 3.1,
         },
       });
       animationSecondParagraph.start({
         opacity: 1,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 2.8 },
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 3.5 },
       });
 
       animationArrow.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 4 },
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 4.5 },
       });
 
       // if (!inView) {
