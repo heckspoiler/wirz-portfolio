@@ -5,6 +5,7 @@
 
 .section-two_main-title {
   margin-left: 10rem;
+  opacity: 0;
 }
 
 .section-two_img-section {
@@ -20,14 +21,15 @@
   width: 39rem;
   margin-left: 8rem;
   margin-top: -3rem;
+  opacity: 0;
 }
 
 .section-two_portrait {
   position: absolute;
   height: 40rem;
   width: 27rem;
-  margin-left: 50rem;
   margin-top: -10rem;
+  left: 120vw;
 }
 
 .section-two_arrow {
@@ -36,6 +38,7 @@
   margin-top: -4rem;
   height: 8rem;
   width: 10rem;
+  opacity: 0;
 }
 
 .section-two_arrow-curvy {
@@ -44,4 +47,5 @@
   margin-top: 32rem;
   height: 8rem;
   width: 10rem;
+  opacity: 0;
 }
