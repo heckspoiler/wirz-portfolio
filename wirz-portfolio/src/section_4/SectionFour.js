@@ -7,7 +7,7 @@ import { useAnimation } from "framer-motion";
 import dots from "./icons/Wireframe/dots.svg";
 import ellipse from "./icons/ellipse_section-4.png";
 import arrow from "./icons/arrow_section-4.png";
-import passugger from "./img/passugger.png";
+import passugger from "./img/passugger-black.png";
 import schwarz from "./img/schwarz-architekten.png";
 import parki from "./img/parki.png";
 import rio from "./img/rio_bar.png";

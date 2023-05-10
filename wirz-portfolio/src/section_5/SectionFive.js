@@ -7,6 +7,7 @@ import { useAnimation } from "framer-motion";
 import circles from "./icons/Wireframe/circles.png";
 import ellipseFive from "./img/ellipse_section-five.png";
 import roadmap from "./img/roadmap.png";
+import arrowSectionFive from "./img/arrow_section-five.png";
 
 export const SectionFive = () => {
   const { ref, inView } = useInView({
@@ -19,6 +20,7 @@ export const SectionFive = () => {
   const animationRoadmap = useAnimation();
   const animationEllipseFive = useAnimation();
   const animationParagraph = useAnimation();
+  const animationArrow = useAnimation();
 
   useEffect(() => {
     if (inView) {
@@ -32,6 +34,7 @@ export const SectionFive = () => {
         transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1 },
       });
       animationRoadmap.start({
+        opacity: 1,
         left: "50%",
         transition: { duration: 1.5, bounce: 0.3, delay: 1.4 },
       });
@@ -41,7 +44,11 @@ export const SectionFive = () => {
       });
       animationParagraph.start({
         opacity: 1,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 6 },
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 4 },
+      });
+      animationArrow.start({
+        opacity: 1,
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 5 },
       });
     }
   }, [inView]);
@@ -64,6 +71,11 @@ export const SectionFive = () => {
       <m.p className="section-five_paragraph" animate={animationParagraph}>
         So many wrong turns to get on the right track!
       </m.p>
+      <m.img
+        src={arrowSectionFive}
+        animate={animationArrow}
+        className="section-five_arrow"
+      />
     </div>
   );
 };
