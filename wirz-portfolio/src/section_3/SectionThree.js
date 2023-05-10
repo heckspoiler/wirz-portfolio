@@ -11,7 +11,7 @@ import arrow from "./img/arrow-section-three.png";
 
 export const SectionThree = () => {
   const { ref, inView } = useInView({
-    threshold: 0.3, // Adjust the value between 0 and 1 according to when you want the animation to trigger
+    threshold: 0.6, // Adjust the value between 0 and 1 according to when you want the animation to trigger
     triggerOnce: true, // Set to true so the animation only triggers once when the element comes into view
   });
 
@@ -28,7 +28,7 @@ export const SectionThree = () => {
       animationTitle.start({
         opacity: 1,
         fontSize: "4rem",
-        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1 },
+        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1.4 },
       });
       animationMagenbrot.start({
         marginLeft: "6rem",
@@ -38,17 +38,17 @@ export const SectionThree = () => {
           type: "spring",
           stiffness: 30,
           duration: 2,
-          delay: 1.2,
+          delay: 1.8,
         },
       });
       animationBackground.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 1.8 },
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 2 },
       });
       animationYummy.start({
         height: "14rem",
         width: "14rem",
-        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 2.2 },
+        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 2.3 },
       });
       animationFirstParagraph.start({
         opacity: 1,
@@ -56,7 +56,7 @@ export const SectionThree = () => {
           type: "spring",
           duration: 1.5,
           bounce: 0.3,
-          delay: 2.4,
+          delay: 2.5,
         },
       });
       animationSecondParagraph.start({

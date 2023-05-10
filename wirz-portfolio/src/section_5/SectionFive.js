@@ -26,12 +26,11 @@ export const SectionFive = () => {
     if (inView) {
       animationTitleFifth.start({
         opacity: 1,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1 },
+        transition: { type: "spring", duration: 3, bounce: 0.3, delay: 1 },
       });
       animationCircleOverlay.start({
-        height: "0px",
-        width: "0px",
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 1 },
+        scale: 0,
+        transition: { type: "spring", duration: 2.5, bounce: 0.3, delay: 0.4 },
       });
       animationRoadmap.start({
         opacity: 1,
