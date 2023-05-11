@@ -112,14 +112,15 @@ export const SectionSix = () => {
       <m.h1 className="section-six_header" animate={animationHeader}>
         SKILLS
       </m.h1>
-      <section className="section-six_scale-container">
-        <m.img
-          src={scale}
-          className="section-six_scale"
-          animate={animationScale}
-        />
-      </section>
+
       <section className="section-six_skills-container">
+        <section className="section-six_scale-container">
+          <m.img
+            src={scale}
+            className="section-six_scale"
+            animate={animationScale}
+          />
+        </section>
         <section className="section-six_skills-design">
           <m.img
             src={photoshop}

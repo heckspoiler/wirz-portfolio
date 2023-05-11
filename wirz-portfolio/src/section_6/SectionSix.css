@@ -2,17 +2,22 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+
+  padding: 0;
+  box-sizing: border-box;
 }
 .section-six_header {
   margin-left: 40rem;
   position: absolute;
+  margin-top: -1vh;
   opacity: 0;
+  color: var(--title-color-beige);
 }
 
 .section-six_skills-container {
   display: flex;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -33,8 +38,8 @@
 
 .section-six_scale {
   position: absolute;
+  margin-top: -21rem;
   scale: 0.59;
-  margin-top: 2.9rem;
   margin-left: 2rem;
   left: -50%;
   opacity: 0;
