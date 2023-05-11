@@ -34,7 +34,7 @@ export const SectionFive = () => {
       });
       animationRoadmap.start({
         opacity: 1,
-        left: "50%",
+
         transition: { duration: 1.5, bounce: 0.3, delay: 1.4 },
       });
       animationEllipseFive.start({
