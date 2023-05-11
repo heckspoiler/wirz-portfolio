@@ -32,7 +32,6 @@ export const SectionTwo = () => {
         transition: { type: "spring", duration: 2, bounce: 0.3, delay: 0.5 },
       });
       animationImage.start({
-        marginLeft: 0,
         ease: "easeInOut",
         opacity: 1,
         transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1 },
