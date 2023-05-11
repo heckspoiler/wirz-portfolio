@@ -76,3 +76,87 @@
     transform: rotate(-10deg);
   }
 }
+
+@media (max-width: 1310px) {
+  .section-six_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .section-six_header {
+    margin-left: 40rem;
+    position: absolute;
+    margin-top: -1vh;
+    opacity: 0;
+    color: var(--title-color-beige);
+  }
+
+  .section-six_skills-container {
+    display: flex;
+    gap: 0.1rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-six_skill {
+    scale: 0.3;
+    justify-self: center;
+    opacity: 0;
+    border: 1px solid red;
+  }
+
+  .section-six_skills-design,
+  .section-six_skills-programming,
+  .section-six_skills-varia {
+    display: flex;
+    border: 1px solid red;
+    justify-content: ;
+  }
+
+  .section-six_scale {
+    margin-top: -5.5rem;
+    scale: 0.45;
+    left: -50%;
+    opacity: 0;
+  }
+
+  .section-six_ellipse {
+    position: absolute;
+    scale: 0.5;
+  }
+
+  .ellipse-orange {
+    margin-left: 42rem;
+    opacity: 0;
+  }
+
+  .ellipse-red {
+    margin-top: 9rem;
+    margin-left: -8rem;
+    opacity: 0;
+  }
+
+  .section-six_arrow {
+    position: absolute;
+    scale: 0.6;
+    margin-left: 55rem;
+    margin-top: 28rem;
+    opacity: 0;
+  }
+
+  @-moz-document url-prefix() {
+    .section-six_arrow {
+      position: absolute;
+      scale: 0.4;
+      margin-left: 58rem;
+      margin-top: 28rem;
+      opacity: 0;
+      transform: rotate(-10deg);
+    }
+  }
+}
