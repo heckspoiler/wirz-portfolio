@@ -1,5 +1,6 @@
 .App {
   max-width: 1630px;
+  height: 4566px;
   height: auto;
   display: flex;
   flex-direction: column;
