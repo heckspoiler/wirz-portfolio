@@ -50,7 +50,6 @@ export const SectionSeven = () => {
         transition: { type: "spring", duration: 1, delay: 4.8 },
       });
       animationUnion.start({
-        transform: "rotate(0)",
         opacity: 1,
         transition: { type: "spring", duration: 1, delay: 1.6 },
       });
@@ -105,7 +104,7 @@ export const SectionSeven = () => {
           my cover letter right here:
         </m.p>
         <m.button className="section-seven_button" animate={animationButtons}>
-          Click me!
+          COVER LETTER
         </m.button>
         <m.a
           href="https://github.com/heckspoiler"
