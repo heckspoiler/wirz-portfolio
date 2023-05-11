@@ -11,7 +11,7 @@ import arrow from "./img/arrow-section-three.png";
 
 export const SectionThree = () => {
   const { ref, inView } = useInView({
-    threshold: 0.6, // Adjust the value between 0 and 1 according to when you want the animation to trigger
+    threshold: 0.7, // Adjust the value between 0 and 1 according to when you want the animation to trigger
     triggerOnce: true, // Set to true so the animation only triggers once when the element comes into view
   });
 

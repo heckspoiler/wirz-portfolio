@@ -62,7 +62,7 @@ export const SectionSeven = () => {
   });
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="section-seven-container">
       <m.h1 className="section-seven_header" animate={animationHeader}>
         Interested?
       </m.h1>
