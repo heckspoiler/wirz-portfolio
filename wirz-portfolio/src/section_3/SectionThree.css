@@ -1,7 +1,7 @@
 .section-three_container {
-  height: 100vh;
-  width: 100vw;
-  margin-top: 2rem;
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
 }
 
 .section-three_text-container {
@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40rem;
+  height: 38rem;
   width: 38rem;
 }
 
@@ -30,6 +30,7 @@
 .para-1 {
   margin-left: 2rem;
   width: 70%;
+  margin-top: -2rem;
 }
 
 .para-2 {
@@ -66,9 +67,9 @@
 
 .section-three_arrow {
   position: absolute;
-  height: 6rem;
-  width: 9rem;
+  scale: 0.35;
   margin-left: 40rem;
   transform: rotate(100deg) scaleX(-1);
   opacity: 0;
+  margin-top: -7.5rem;
 }

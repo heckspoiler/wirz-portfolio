@@ -32,7 +32,7 @@ export const SectionTwo = () => {
         transition: { type: "spring", duration: 2, bounce: 0.3, delay: 0.5 },
       });
       animationImage.start({
-        left: "50rem",
+        marginLeft: 0,
         ease: "easeInOut",
         opacity: 1,
         transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1 },
@@ -69,11 +69,13 @@ export const SectionTwo = () => {
           src={card}
           animate={animationCard}
         />
-        <m.img
-          className="section-two_portrait"
-          src={portrait}
-          animate={animationImage}
-        />
+        <div className="section-two_portrait-container">
+          <m.img
+            className="section-two_portrait"
+            src={portrait}
+            animate={animationImage}
+          />
+        </div>
         <m.img
           className="section-two_arrow-curvy"
           src={arrowCurvy}

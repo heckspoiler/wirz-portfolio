@@ -23,14 +23,16 @@ function App() {
     };
   }, []);
   return (
-    <div className="App">
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive />
-      <SectionSix />
-      <SectionSeven />
+    <div className="app-container">
+      <div className="App">
+        <SectionOne />
+        <SectionTwo />
+        <SectionThree />
+        <SectionFour />
+        <SectionFive />
+        <SectionSix />
+        <SectionSeven />
+      </div>
     </div>
   );
 }

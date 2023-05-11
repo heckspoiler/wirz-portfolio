@@ -1,6 +1,7 @@
 .section-two_main-container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
 }
 
 .section-two_main-title {
@@ -9,8 +10,8 @@
 }
 
 .section-two_img-section {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   top: 0;
   margin-top: -30px;
@@ -23,13 +24,16 @@
   margin-top: -3rem;
   opacity: 0;
 }
-
+.section-two_portrait-container {
+  margin-left: 4rem;
+  height: auto;
+  width: auto;
+}
 .section-two_portrait {
-  position: absolute;
   height: 40rem;
   width: 27rem;
   margin-top: -10rem;
-  left: 120vw;
+  margin-left: 110rem;
 }
 
 .section-two_arrow {
@@ -42,8 +46,8 @@
 
 .section-two_arrow-curvy {
   position: absolute;
-  margin-left: 58rem;
-  margin-top: 31rem;
+  margin-left: 60rem;
+  margin-top: 30rem;
   scale: 0.8;
   opacity: 0;
 }

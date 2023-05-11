@@ -1,7 +1,10 @@
 .App {
-  max-width: 1630px;
-  height: 4566px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-container {
+  max-width: 1400px;
+  max-height: 4566px;
   height: auto;
-  display: flex;
-  flex-direction: column;
 }
