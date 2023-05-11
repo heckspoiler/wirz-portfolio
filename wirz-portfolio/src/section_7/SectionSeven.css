@@ -87,11 +87,12 @@
   height: 3rem;
   width: 3rem;
   margin-top: 1rem;
+  opacity: 0;
 }
 
 .github-link svg {
   fill: none;
-  transition: fill 4s ease-in-out;
+  visibility: none;
 }
 
 .path {

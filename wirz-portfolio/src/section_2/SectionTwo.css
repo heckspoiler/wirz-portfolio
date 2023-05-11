@@ -34,18 +34,16 @@
 
 .section-two_arrow {
   position: absolute;
-  margin-left: 40rem;
-  margin-top: -4rem;
-  height: 8rem;
-  width: 10rem;
+  margin-left: 36rem;
+  margin-top: -6rem;
+  scale: 0.6;
   opacity: 0;
 }
 
 .section-two_arrow-curvy {
   position: absolute;
-  margin-left: 56rem;
-  margin-top: 32rem;
-  height: 12rem;
-  width: 12rem;
+  margin-left: 58rem;
+  margin-top: 31rem;
+  scale: 0.8;
   opacity: 0;
 }

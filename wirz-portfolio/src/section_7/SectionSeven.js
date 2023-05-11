@@ -45,6 +45,10 @@ export const SectionSeven = () => {
         opacity: 1,
         transition: { type: "spring", duration: 1, delay: 4 },
       });
+      animationButtons.start({
+        opacity: 1,
+        transition: { type: "spring", duration: 1, delay: 4.8 },
+      });
     }
   });
 
@@ -95,26 +99,19 @@ export const SectionSeven = () => {
           And no worries, you can find <br />
           my cover letter right here:
         </m.p>
-        <m.button
-          className="section-seven_button"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ type: "spring", duration: 1, delay: 4.8 }}
-        >
+        <m.button className="section-seven_button" animate={animationButtons}>
           Click me!
         </m.button>
         <m.a
           href="https://github.com/heckspoiler"
           className="github-link"
           target="_blank"
+          animate={animationButtons}
         >
           <m.svg
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
             className="github-svg"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 5 }}
           >
             <path
               className="path"
