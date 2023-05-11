@@ -49,6 +49,15 @@ export const SectionSeven = () => {
         opacity: 1,
         transition: { type: "spring", duration: 1, delay: 4.8 },
       });
+      animationUnion.start({
+        transform: "rotate(0)",
+        opacity: 1,
+        transition: { type: "spring", duration: 1, delay: 1.6 },
+      });
+      animationEllipse.start({
+        opacity: 1,
+        transition: { type: "spring", duration: 1, delay: 1.8 },
+      });
     }
   });
 
@@ -67,17 +76,13 @@ export const SectionSeven = () => {
         src={union}
         className="union"
         alt="union"
-        initial={{ transform: "rotate(40deg)", opacity: 0 }}
-        animate={{ transform: "rotate(0deg)", opacity: 1 }}
-        transition={{ type: "spring", duration: 1, delay: 1.6 }}
+        animate={animationUnion}
       />
       <m.img
         src={ellipse}
         className="section-seven_ellipse"
         alt="ellipse"
-        initial={{ marginLeft: "150vw" }}
-        animate={{ marginLeft: "56vw" }}
-        transition={{ type: "spring", duration: 1, delay: 5.5 }}
+        animate={animationEllipse}
       />
       <section className="section-seven_paragraph-section">
         <m.p animate={animationParagraphUpper}>
