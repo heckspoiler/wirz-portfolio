@@ -65,6 +65,14 @@
   opacity: 0;
 }
 
+.section-seven_buttons {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-seven_button {
   height: 3rem;
   width: 15rem;
@@ -74,15 +82,15 @@
   color: white;
   font-size: 1.3rem;
   margin-top: 1rem;
-  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
   font-family: var(--main-font);
   opacity: 0;
 }
 
-.section-seven_button:hover {
+.coverletter-button:hover {
   cursor: pointer;
   background-color: rgba(255, 85, 68, 1);
-  box-shadow: -2px 6px 1px black;
+  box-shadow: -2px 2px 1px black;
 }
 
 .section-seven_button:active {

@@ -11,7 +11,7 @@ import arrow from "./img/arrow-section-three.png";
 
 export const SectionThree = () => {
   const { ref, inView } = useInView({
-    threshold: 0.7, // Adjust the value between 0 and 1 according to when you want the animation to trigger
+    threshold: 0.5, // Adjust the value between 0 and 1 according to when you want the animation to trigger
     triggerOnce: true, // Set to true so the animation only triggers once when the element comes into view
   });
 
@@ -28,27 +28,25 @@ export const SectionThree = () => {
       animationTitle.start({
         opacity: 1,
         fontSize: "4rem",
-        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1.8 },
+        transition: { type: "spring", duration: 1, bounce: 0.3, delay: 1.2 },
       });
       animationMagenbrot.start({
-        marginLeft: "6rem",
-        ease: "easeInOut",
         opacity: 1,
         transition: {
           type: "spring",
           stiffness: 30,
           duration: 2,
-          delay: 2.4,
+          delay: 1.6,
         },
       });
       animationBackground.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 2.6 },
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 2 },
       });
       animationYummy.start({
         height: "14rem",
         width: "14rem",
-        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 3 },
+        transition: { type: "spring", duration: 1, bounce: 0.6, delay: 2.4 },
       });
       animationFirstParagraph.start({
         opacity: 1,
@@ -56,17 +54,17 @@ export const SectionThree = () => {
           type: "spring",
           duration: 1.5,
           bounce: 0.3,
-          delay: 3.2,
+          delay: 2.8,
         },
       });
       animationSecondParagraph.start({
         opacity: 1,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 3.4 },
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 3 },
       });
 
       animationArrow.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 4.5 },
+        transition: { type: "spring", duration: 2, bounce: 0.3, delay: 4 },
       });
 
       // if (!inView) {
@@ -85,20 +83,23 @@ export const SectionThree = () => {
           <br />
           Motivation
         </m.h1>
-        <m.p
-          className="section-three_paragraph para-1"
-          animate={animationFirstParagraph}
-        >
-          I spend most of my day in the world of web development and design.
-          It's like an endless rollercoaster ride, except I never get nauseous.
-        </m.p>
-        <m.p
-          className="section-three_paragraph para-2"
-          animate={animationSecondParagraph}
-        >
-          Definitely not an expert (yet), but working every day to improve my
-          skills and stay in the saddle.
-        </m.p>
+        <section className="para-container">
+          <m.p
+            className="section-three_paragraph para-1"
+            animate={animationFirstParagraph}
+          >
+            I spend most of my day in the world of web development and design.
+            It's like an endless rollercoaster ride, except I never get
+            nauseous.
+          </m.p>
+          <m.p
+            className="section-three_paragraph para-2"
+            animate={animationSecondParagraph}
+          >
+            Definitely not an expert (yet), but working every day to improve my
+            skills and stay in the saddle.
+          </m.p>
+        </section>
       </section>
       <m.section className="section-three_img-container">
         <m.img
