@@ -104,18 +104,18 @@ export const SectionSeven = () => {
           my cover letter right here:
         </m.p>
         <section className="section-seven_buttons">
-          <m.button
-            className="section-seven_button coverletter-button"
-            animate={animationButtons}
+          <a
+            href="/cv/cv_motivationsschreiben.pdf"
+            download="cv-motivationsschreiben-carlo-ettisberger"
+            className="download-link"
           >
-            <a
-              href="/cv/cv_motivationsschreiben.pdf"
-              download="cv-motivationsschreiben-carlo-ettisberger"
-              className="download-link"
+            <m.button
+              className="section-seven_button coverletter-button"
+              animate={animationButtons}
             >
               COVER LETTER
-            </a>
-          </m.button>
+            </m.button>
+          </a>
           <m.a
             href="https://github.com/heckspoiler"
             className="github-link"
