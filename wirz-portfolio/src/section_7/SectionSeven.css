@@ -19,6 +19,11 @@
   opacity: 0;
 }
 
+.download-link {
+  text-decoration: none;
+  color: white;
+}
+
 .section-seven_header {
   color: var(--title-color-blue);
   margin-left: 15vw;

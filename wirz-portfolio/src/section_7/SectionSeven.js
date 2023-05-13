@@ -108,7 +108,13 @@ export const SectionSeven = () => {
             className="section-seven_button coverletter-button"
             animate={animationButtons}
           >
-            COVER LETTER
+            <a
+              href="/cv/cv_motivationsschreiben.pdf"
+              download="cv-motivationsschreiben-carlo-ettisberger"
+              className="download-link"
+            >
+              COVER LETTER
+            </a>
           </m.button>
           <m.a
             href="https://github.com/heckspoiler"
